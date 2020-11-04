@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2728085025040274391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2728085025040274389}
+  - component: {fileID: 2728085025040274388}
+  - component: {fileID: 2728085025040274379}
+  - component: {fileID: 2728085025040274377}
+  - component: {fileID: 2728085025040274376}
+  - component: {fileID: 2728085025040274378}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2728085025040274389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728085025040274391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5684245486333118529}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2728085025040274388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728085025040274391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 690a702c9881048a0a9308c69b8806d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameConfig: {fileID: 11400000, guid: f0f151459e77d95449a18f22b6a4c768, type: 2}
+  OnGameStarted: {fileID: 11400000, guid: fa76ed8aa5f156b419d3d851313003e0, type: 2}
+  OnLivesChanged: {fileID: 11400000, guid: 6470741f4b6f5a74dbace5f5db1566f1, type: 2}
+  OnGameOver: {fileID: 11400000, guid: e13ee35cb3e5d484c8c30837964dd2c8, type: 2}
+  currentLives: {fileID: 11400000, guid: 2a13457debca7df44bed44b7949eba99, type: 2}
+--- !u!114 &2728085025040274379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728085025040274391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 893524aa566074a648ae780453238f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnNewHighScoreReached: {fileID: 11400000, guid: b5e2636f9132043178b555ba5300cbc7,
+    type: 2}
+  currentTowerHeight: {fileID: 11400000, guid: e404d876ff818c5438cce1030fc538b2, type: 2}
+--- !u!114 &2728085025040274377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728085025040274391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aecf2c2ffdaa94d13b347bf2e9326100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstMilestoneHeight: 15
+  difficultyFactor: 15
+  highestHeightThreshould: 0.05
+  winningFlag: {fileID: 5684245486333118529}
+  OnHeightIncreased: {fileID: 11400000, guid: 4020cbfc4e0de1c468e87e0e27426598, type: 2}
+  OnMilestoneReached: {fileID: 11400000, guid: f84ae84514c1e3348b760cf8f95cb539, type: 2}
+  currentTowerHeight: {fileID: 11400000, guid: e404d876ff818c5438cce1030fc538b2, type: 2}
+  currentMilestoneHeight: {fileID: 11400000, guid: 29692d92c222b4bcf99440b32e13aa0a,
+    type: 2}
+--- !u!114 &2728085025040274376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728085025040274391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4467fc7c96c452a8f25aa05a2d60a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameConfig: {fileID: 11400000, guid: f0f151459e77d95449a18f22b6a4c768, type: 2}
+  MoveLeft: {fileID: 11400000, guid: 2e0cf59b7a33a4363a46825c9aa9e220, type: 2}
+  MoveRight: {fileID: 11400000, guid: f970d82d6e7374dd0a025bdeb316d657, type: 2}
+  Rotate: {fileID: 11400000, guid: d58baa63bc76a4bd5a49eaa06bee6e91, type: 2}
+  Dash: {fileID: 11400000, guid: 318e1f86aee244a7c93d0abf54bf5afc, type: 2}
+  eventMoveLeft: {fileID: 11400000, guid: 413c7d79a8f884e67b0db6c1af094265, type: 2}
+  eventMoveRight: {fileID: 11400000, guid: e71d8c74a55db442e867b1aec55e3e38, type: 2}
+  eventRotate: {fileID: 11400000, guid: b120def04a16248458e9f78749959b37, type: 2}
+  eventDash: {fileID: 11400000, guid: d8c3f9aa863b44182b431015f8443f02, type: 2}
+--- !u!114 &2728085025040274378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728085025040274391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0fdaf32530ecbe4b8eeae3e8ccc21a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventAndResponses:
+  - name: OnPieceDestroyed
+    gameEvent: {fileID: 11400000, guid: 3b2a5de87a161a443aa3b2d2bfe7ac62, type: 2}
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2728085025040274388}
+          m_MethodName: OnPieceDestroyedHandler
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: OnGameOver
+    gameEvent: {fileID: 11400000, guid: e13ee35cb3e5d484c8c30837964dd2c8, type: 2}
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2728085025040274379}
+          m_MethodName: OnGameOverHandler
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2728085025040274376}
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: OnPiecePlaced
+    gameEvent: {fileID: 11400000, guid: 3fb37f13be9d545b296e3860cd13ffb8, type: 2}
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2728085025040274377}
+          m_MethodName: OnPiecePlacedHandler
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!1 &5684245486333118530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5684245486333118529}
+  m_Layer: 0
+  m_Name: WinningFlag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5684245486333118529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5684245486333118530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2728085025040274389}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
